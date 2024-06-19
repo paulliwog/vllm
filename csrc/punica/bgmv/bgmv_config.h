@@ -167,7 +167,11 @@ void bgmv_kernel(out_T *__restrict__ Y, const in_T *__restrict__ X,
     FOR_BGMV_WIDE(f, in_T, out_T, W_T, 8)  \
     FOR_BGMV_WIDE(f, in_T, out_T, W_T, 16) \
     FOR_BGMV_WIDE(f, in_T, out_T, W_T, 32) \
-    FOR_BGMV_WIDE(f, in_T, out_T, W_T, 64)
+    FOR_BGMV_WIDE(f, in_T, out_T, W_T, 64) \
+    FOR_BGMV_WIDE(f, in_T, out_T, W_T, 128) \
+    FOR_BGMV_WIDE(f, in_T, out_T, W_T, 256) \
+    FOR_BGMV_WIDE(f, in_T, out_T, W_T, 512) \
+    FOR_BGMV_WIDE(f, in_T, out_T, W_T, 1024)
 
 
 #define FOR_INST_BGMV_WIDE_NARROW(f, in_T, out_T, W_T) \
